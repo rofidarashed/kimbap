@@ -1,8 +1,8 @@
-class Item {
+class TermModel {
   final String engWord;
   final String krWord;
   final String sound;
 
-  const Item(
+  const TermModel(
       {required this.engWord, required this.krWord, required this.sound});
 }

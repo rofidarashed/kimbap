@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../colors/colors.dart';
 import '../components/category.dart';
 import 'family_page.dart';
+import 'greeting_page.dart';
 import 'numers_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -43,34 +44,10 @@ class HomePage extends StatelessWidget {
             height: .5,
           ),
           Category(
-            text: 'Food',
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (cotext) {
-                return const NumersPage();
-              }));
-            },
-          ),
-          const Divider(
-            thickness: .5,
-            height: .5,
-          ),
-          Category(
             text: 'Greetings',
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (cotext) {
-                return const NumersPage();
-              }));
-            },
-          ),
-          const Divider(
-            thickness: .5,
-            height: .5,
-          ),
-          Category(
-            text: 'Colors',
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (cotext) {
-                return const NumersPage();
+                return const GreetingPage();
               }));
             },
           ),
